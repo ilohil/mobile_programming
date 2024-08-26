@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Button, TextInput, Alert } from 'react-native';
 export default function App() {
 
   const [result, setResult] = useState("Guess a number between 1-100")
-  const [tries, setTries] = useState(0)
+  const [tries, setTries] = useState(1)
   const [number, setNumber] = useState(Math.floor(Math.random()*100)+1)
   const [guess, setGuess] = useState(0)
 
@@ -21,7 +21,7 @@ export default function App() {
       setTries(tries + 1)
     } else {
       Alert.alert("Message", "You guessed the number in " + tries + " guesses")
-      setTries(0)
+      setTries(1)
       setNumber(Math.floor(Math.random()*100) +1)
       setResult("Guess a number between 1-100")
     }
