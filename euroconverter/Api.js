@@ -2,7 +2,7 @@ export const fetchExchangerates = async () => {
     try {
       const response = await fetch('https://api.apilayer.com/exchangerates_data/latest', {
         headers: {
-          "apikey": 'WGBGwj00x6Df79ZkDIYsXeTti6Rg0Uo8'
+          "apikey": 'YOUR API KEY'
         }
       });
   
